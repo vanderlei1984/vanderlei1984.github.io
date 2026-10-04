@@ -24,11 +24,11 @@ p{max-width:62ch;margin:0 0 16px;color:var(--soft)}
 .hero h1{font-size:clamp(2.3rem,6vw,3.8rem);margin-bottom:20px}
 .hero p{font-size:1.15rem}
 .spine{width:100%;max-width:180px;justify-self:center}
-.spine rect{fill:var(--panel);stroke:var(--accent);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:align 1.6s ease-out both}
+.spine rect{fill:var(--panel);stroke:var(--accent);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:align 10s ease-in-out infinite}
 .spine rect:nth-child(odd){--r:-9deg;--x:-14px}
 .spine rect:nth-child(even){--r:8deg;--x:12px}
 .spine rect:nth-child(4){fill:var(--sand);stroke:var(--sand)}
-@keyframes align{from{transform:translateX(var(--x)) rotate(var(--r))}to{transform:none}}
+@keyframes align{0%,100%{transform:translateX(var(--x)) rotate(var(--r))}16%,84%{transform:none}}
 @media(prefers-reduced-motion:reduce){.spine rect{animation:none}}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .list{list-style:none;padding:0;margin:0}
